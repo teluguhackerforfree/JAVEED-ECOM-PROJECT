@@ -3,7 +3,7 @@
 <title>Products</title>
 </head>
 <body>
-<h2>📦 Product List</h2>
+<h2> Product List</h2>
 <table border="1" cellpadding="10">
 <tr>
 <th>Product</th>
