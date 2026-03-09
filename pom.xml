@@ -1,28 +1,183 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
- http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<html>
+<head>
+<title>My E-Commerce Store</title>
 
- <modelVersion>4.0.0</modelVersion>
+<style>
 
- <groupId>com.ecommerce</groupId>
- <artifactId>ecommerce-app</artifactId>
- <version>1.0</version>
- <packaging>war</packaging>
+body{
+font-family: Arial;
+margin:0;
+background:#f4f6f9;
+}
 
- <name>EcommerceApp</name>
+/* Navbar */
 
- <dependencies>
-   <dependency>
-     <groupId>javax.servlet</groupId>
-     <artifactId>javax.servlet-api</artifactId>
-     <version>4.0.1</version>
-     <scope>provided</scope>
-   </dependency>
- </dependencies>
+.navbar{
+background:#222;
+padding:15px;
+color:white;
+display:flex;
+justify-content:space-between;
+}
 
- <build>
-   <finalName>MyWebApp</finalName>
- </build>
+.navbar a{
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
+}
 
-</project>
+/* Hero Section */
+
+.hero{
+background:#007bff;
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+/* Product Section */
+
+.products{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+width:220px;
+}
+
+.card img{
+width:150px;
+height:150px;
+}
+
+.price{
+color:green;
+font-size:18px;
+font-weight:bold;
+}
+
+.btn{
+background:#007bff;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#0056b3;
+}
+
+/* Footer */
+
+.footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<div>
+<b>🛒 MyStore</b>
+</div>
+
+<div>
+<a href="#">Home</a>
+<a href="products.jsp">Products</a>
+<a href="#">Cart</a>
+<a href="#">Contact</a>
+</div>
+
+</div>
+
+
+<!-- Hero Section -->
+
+<div class="hero">
+
+<h1>Welcome to My Online Store</h1>
+
+<p>Best Deals on Electronics</p>
+
+</div>
+
+
+<!-- Products -->
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/179/179386.png">
+
+<h3>Laptop</h3>
+
+<p class="price">₹60000</p>
+
+<button class="btn">Add to Cart</button>
+
+</div>
+
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/15/15874.png">
+
+<h3>Mobile</h3>
+
+<p class="price">₹25000</p>
+
+<button class="btn">Add to Cart</button>
+
+</div>
+
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/727/727245.png">
+
+<h3>Headphones</h3>
+
+<p class="price">₹3000</p>
+
+<button class="btn">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<!-- Footer -->
+
+<div class="footer">
+
+<p>© 2026 My E-Commerce Store</p>
+
+</div>
+
+</body>
+</html>
