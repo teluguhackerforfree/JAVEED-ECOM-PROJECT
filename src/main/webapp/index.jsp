@@ -18,7 +18,7 @@ border-radius:5px;
 </style>
 </head>
 <body>
-<h1>🛒 Welcome to My Online Store</h1>
+<h1>Welcome to My Online Store</h1>
 <p>Best Deals on Electronics</p>
 <a href="products.jsp" class="btn">View Products</a>
 </body>
