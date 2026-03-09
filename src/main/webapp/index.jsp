@@ -2,7 +2,9 @@
 
 <head>
 
-<title>My E-Commerce Store</title>
+<meta charset="UTF-8">
+
+<title>MyAmazon - Products</title>
 
 <style>
 
@@ -37,6 +39,7 @@ display:flex;
 width:100%;
 padding:10px;
 border:none;
+outline:none;
 }
 
 .search button{
@@ -50,26 +53,25 @@ cursor:pointer;
 margin-left:20px;
 }
 
-/* Secondary menu */
+/* Category Menu */
 
 .subnav{
 background:#232f3e;
-color:white;
 padding:10px;
 }
 
 .subnav a{
 color:white;
-margin-right:20px;
 text-decoration:none;
+margin-right:20px;
 }
 
 /* Hero Banner */
 
 .hero{
-background:url('https://images.unsplash.com/photo-1518770660439-4636190af475');
-background-size:cover;
+background:url("https://images.unsplash.com/photo-1518770660439-4636190af475");
 height:250px;
+background-size:cover;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -78,26 +80,37 @@ font-size:35px;
 font-weight:bold;
 }
 
-/* Product Grid */
+/* Products Grid */
 
 .products{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:20px;
+gap:25px;
 padding:30px;
 }
+
+/* Product Card */
 
 .card{
 background:white;
 padding:20px;
-border-radius:5px;
+border-radius:8px;
 text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
 }
 
 .card img{
 width:150px;
 height:150px;
+object-fit:cover;
 }
+
+/* Price */
 
 .price{
 color:green;
@@ -105,12 +118,14 @@ font-size:18px;
 font-weight:bold;
 }
 
+/* Button */
+
 .btn{
 background:#ffd814;
 border:none;
 padding:10px 15px;
 cursor:pointer;
-margin-top:10px;
+border-radius:4px;
 }
 
 .btn:hover{
@@ -124,7 +139,6 @@ background:#131921;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
 }
 
 </style>
@@ -156,8 +170,7 @@ Cart 🛒
 
 </div>
 
-
-<!-- Sub Navigation -->
+<!-- Category Menu -->
 
 <div class="subnav">
 
@@ -169,43 +182,39 @@ Cart 🛒
 
 </div>
 
-
 <!-- Banner -->
 
 <div class="hero">
-
 Best Deals on Electronics
-
 </div>
-
 
 <!-- Products -->
 
 <div class="products">
 
 <div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/179/179386.png">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
 <h3>Laptop</h3>
 <p class="price">₹60000</p>
 <button class="btn">Add to Cart</button>
 </div>
 
 <div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/15/15874.png">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
 <h3>Mobile</h3>
 <p class="price">₹25000</p>
 <button class="btn">Add to Cart</button>
 </div>
 
 <div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/727/727245.png">
+<img src="https://images.unsplash.com/photo-1518444028785-8fbcd101ebb9">
 <h3>Headphones</h3>
 <p class="price">₹3000</p>
 <button class="btn">Add to Cart</button>
 </div>
 
 <div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
+<img src="https://images.unsplash.com/photo-1519183071298-a2962be96f83">
 <h3>Camera</h3>
 <p class="price">₹45000</p>
 <button class="btn">Add to Cart</button>
@@ -213,12 +222,11 @@ Best Deals on Electronics
 
 </div>
 
-
 <!-- Footer -->
 
 <div class="footer">
 
-© 2026 My Amazon Clone
+© 2026 MyAmazon Store
 
 </div>
 
