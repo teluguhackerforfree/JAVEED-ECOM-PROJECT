@@ -15,12 +15,12 @@ pipeline {
             }
         }
 
-        stage('Deploy to Tomcat') {
+        stage('Deploy WAR') {
             steps {
                 deploy adapters: [tomcat9(
-                    credentialsId: '75fbdf08-da88-4a73-afd7-7bd1b24c3dff',
+                    credentialsId: '3c564643-a2ae-4e95-b283-18b8dc2b1136',
                     path: '',
-                    url: 'http://174.129.47.58:8080'
+                    url: 'http://54.83.156.56:8080'
                 )],
                 contextPath: 'javeedapp',
                 war: '**/*.war'
