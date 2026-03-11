@@ -22,7 +22,7 @@ pipeline {
                     path: '',
                     url: 'http://54.83.156.56:8080'
                 )],
-                contextPath: 'javeedapp',
+                contextPath: 'webapp',
                 war: '**/*.war'
             }
         }
